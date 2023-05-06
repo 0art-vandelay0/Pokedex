@@ -15,10 +15,10 @@
         </layout>
         <child>
           <object class="ttk.Label" id="poke_entry_label" named="True">
-            <property name="text" translatable="yes">Search 
-Pokemon:</property>
+            <property name="justify">center</property>
+            <property name="text" translatable="yes">Search Pokedex:</property>
             <layout manager="pack">
-              <property name="padx">5</property>
+              <property name="padx">3</property>
               <property name="pady">5</property>
               <property name="side">top</property>
             </layout>
@@ -36,9 +36,8 @@ Pokemon:</property>
         </child>
         <child>
           <object class="ttk.Button" id="button1">
-            <property name="command" type="command" 
-cbtype="simple">search</property>
-            <property name="text" translatable="yes">Search</property>
+            <property name="command" type="command" cbtype="simple">search</property>
+            <property name="text" translatable="yes">Go!</property>
             <property name="width">6</property>
             <layout manager="pack">
               <property name="ipadx">5</property>
@@ -77,7 +76,7 @@ cbtype="simple">search</property>
               <property name="anchor">center</property>
               <property name="expand">true</property>
               <property name="fill">x</property>
-              <property name="side">bottom</property>
+              <property name="side">top</property>
             </layout>
           </object>
         </child>
@@ -89,7 +88,7 @@ cbtype="simple">search</property>
               <property name="anchor">center</property>
               <property name="expand">true</property>
               <property name="fill">x</property>
-              <property name="side">bottom</property>
+              <property name="side">top</property>
             </layout>
           </object>
         </child>
@@ -97,4 +96,3 @@ cbtype="simple">search</property>
     </child>
   </object>
 </interface>
-
