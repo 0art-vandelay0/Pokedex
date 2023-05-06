@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="toplevel1">
+    <property name="height">300</property>
+    <property name="title" translatable="yes">Pokemon Stats</property>
+    <property name="width">200</property>
+    <child>
+      <object class="ttk.Frame" id="frame1">
+        <property name="height">200</property>
+        <property name="width">300</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="poke_entry_label" named="True">
+            <property name="text" translatable="yes">Search 
+Pokemon:</property>
+            <layout manager="pack">
+              <property name="padx">5</property>
+              <property name="pady">5</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Entry" id="poke_entry_box" named="True">
+            <property name="justify">center</property>
+            <layout manager="pack">
+              <property name="padx">10</property>
+              <property name="pady">5</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="button1">
+            <property name="command" type="command" 
+cbtype="simple">search</property>
+            <property name="text" translatable="yes">Search</property>
+            <property name="width">6</property>
+            <layout manager="pack">
+              <property name="ipadx">5</property>
+              <property name="padx">5</property>
+              <property name="pady">6</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Frame" id="poke_image_frame" named="True">
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="poke_img_label" named="True">
+            <property name="anchor">center</property>
+            <property name="justify">center</property>
+            <layout manager="pack">
+              <property name="anchor">n</property>
+              <property name="expand">true</property>
+              <property name="fill">x</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="poke_number_label" named="True">
+            <property name="anchor">center</property>
+            <property name="justify">center</property>
+            <layout manager="pack">
+              <property name="anchor">center</property>
+              <property name="expand">true</property>
+              <property name="fill">x</property>
+              <property name="side">bottom</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="poke_type_label" named="True">
+            <property name="anchor">center</property>
+            <property name="justify">center</property>
+            <layout manager="pack">
+              <property name="anchor">center</property>
+              <property name="expand">true</property>
+              <property name="fill">x</property>
+              <property name="side">bottom</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
+
